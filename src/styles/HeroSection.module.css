@@ -1,0 +1,141 @@
+.heroSection {
+  padding: 6rem 0;
+  background: var(--Base-White, #fff);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.content {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--Primary-50, #f9f5ff);
+  border: 1px solid var(--Primary-200, #e9d7fe);
+  border-radius: 1rem;
+  padding: 0.25rem;
+}
+
+.badgeLabel {
+  background: var(--Base-White, #fff);
+  border: 1px solid var(--Primary-300, #d6bbfb);
+  border-radius: 1rem;
+  padding: 0.125rem 0.625rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--Primary-700, #6941c6);
+}
+
+.badgeMessage {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding-right: 0.625rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--Primary-700, #6941c6);
+}
+
+.badgeIcon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.heading {
+  margin: 1rem 0;
+  font-size: 3.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.075rem;
+  color: var(--Gray-900, #101828);
+}
+
+.description {
+  font-size: 1.25rem;
+  line-height: 1.875;
+  color: var(--Gray-600, #475467);
+  margin-bottom: 3rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.demoButton,
+.signupButton {
+  padding: 1rem 1.75rem;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.demoButton {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--Base-White, #fff);
+  border: 1px solid var(--Gray-300, #d0d5dd);
+  color: var(--Gray-700, #344054);
+}
+
+.signupButton {
+  background: var(--Primary-600, #7f56d9);
+  border: 1px solid var(--Primary-600, #7f56d9);
+  color: var(--Base-White, #fff);
+}
+
+.demoButton:hover {
+  background: var(--Gray-50, #f9fafb);
+}
+
+.signupButton:hover {
+  background: var(--Primary-700, #6941c6);
+}
+
+.heroImage {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-left: solid black 5px;
+  border-top: solid black 5px;
+  border-right: solid black 5px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 4rem 0;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1.125rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
